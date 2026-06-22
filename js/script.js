@@ -201,37 +201,46 @@ const commands = {
   sudo: `<span class="term-err">Mohib is not in the sudoers file. This incident will be reported.</span>`
 };
 
+const termSubmitBtn = document.getElementById('terminalSubmitBtn');
+
+function processTerminalCommand() {
+  const val = termInput.value.trim().toLowerCase();
+  termInput.value = '';
+  
+  if (val === '') return;
+  
+  const echoDiv = document.createElement('div');
+  echoDiv.innerHTML = `<span class="prompt">mohib@portfolio:~$</span> ${val}`;
+  termBody.appendChild(echoDiv);
+  
+  if (val === 'clear') {
+    termBody.innerHTML = `<div>Terminal cleared. Type 'help' for commands.</div>`;
+    return;
+  }
+  if (val === 'exit') {
+    termBody.innerHTML = `<div>Session closed. Type 'help' to restart.</div>`;
+    return;
+  }
+  
+  const replyDiv = document.createElement('div');
+  if (commands[val]) {
+    replyDiv.innerHTML = commands[val];
+  } else {
+    replyDiv.innerHTML = `<span class="term-err">bash: ${val}: command not found</span>`;
+  }
+  termBody.appendChild(replyDiv);
+  termBody.scrollTop = termBody.scrollHeight;
+}
+
 if (termInput) {
   termInput.addEventListener('keydown', function(e) {
     if (e.key === 'Enter') {
-      const val = this.value.trim().toLowerCase();
-      this.value = '';
-      
-      if (val === '') return;
-      
-      const echoDiv = document.createElement('div');
-      echoDiv.innerHTML = `<span class="prompt">mohib@portfolio:~$</span> ${val}`;
-      termBody.appendChild(echoDiv);
-      
-      if (val === 'clear') {
-        termBody.innerHTML = `<div>Terminal cleared. Type 'help' for commands.</div>`;
-        return;
-      }
-      if (val === 'exit') {
-        termBody.innerHTML = `<div>Session closed. Type 'help' to restart.</div>`;
-        return;
-      }
-      
-      const replyDiv = document.createElement('div');
-      if (commands[val]) {
-        replyDiv.innerHTML = commands[val];
-      } else {
-        replyDiv.innerHTML = `<span class="term-err">bash: ${val}: command not found</span>`;
-      }
-      termBody.appendChild(replyDiv);
-      termBody.scrollTop = termBody.scrollHeight;
+      processTerminalCommand();
     }
   });
+}
+if (termSubmitBtn) {
+  termSubmitBtn.addEventListener('click', processTerminalCommand);
 }
 
 // ===== GALLERY MODAL LOGIC =====
