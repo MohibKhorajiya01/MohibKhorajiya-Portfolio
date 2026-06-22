@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mohib Khorajiya — Flutter Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Mohib Khorajiya — Flutter Developer specializing in mobile apps with Dart, Firebase, Riverpod & GraphQL."/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark nav-main fixed-top" id="mainNav">
+    <div class="scroll-progress-bar" id="scrollProgress"></div>
+    <div class="container">
+      <a class="navbar-brand nav-logo" href="#hero">M<span>K</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-1">
+          <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item ms-lg-2"><a class="btn btn-nav" href="#contact">Hire Me</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-particles" id="heroParticles"></div>
+    <div class="hero-glow glow1"></div>
+    <div class="hero-glow glow2"></div>
+    <div class="container">
+      <div class="row align-items-center min-vh-100">
+        <div class="col-lg-7">
+          <div class="hero-badge fade-up"><span class="dot"></span> Available for Freelance</div>
+          <p class="hero-hi fade-up">Hello, I'm</p>
+          <h1 class="hero-name fade-up">Mohib <span class="pink">Khorajiya</span></h1>
+          <h2 class="hero-role fade-up"><span id="typingText">Flutter Developer</span><span class="cursor">|</span></h2>
+          <div class="terminal-window fade-up mt-4 mb-4" id="terminalOverlay" style="height: 250px;">
+            <div class="terminal-header">
+              <div class="mac-btns">
+                <span class="mac-btn close"></span>
+                <span class="mac-btn min"></span>
+                <span class="mac-btn max"></span>
+              </div>
+              <div class="terminal-title">mohib@portfolio:~</div>
+            </div>
+            <div class="terminal-body" id="terminalBody">
+              <div>Welcome to Mohib's interactive terminal!</div>
+              <div class="term-info">Type 'help' to see available commands.</div>
+            </div>
+            <div class="terminal-input-line">
+              <span class="prompt">mohib@portfolio:~$</span>
+              <input type="text" id="terminalInput" autocomplete="off" spellcheck="false">
+            </div>
+          </div>
+          
+          <div class="hero-btns fade-up">
+            <a href="#projects" class="btn-accent"><i class="bi bi-rocket-takeoff"></i> View Projects</a>
+            <a href="https://github.com/MohibKhorajiya01" target="_blank" class="btn-ghost"><i class="bi bi-github"></i> GitHub</a>
+          </div>
+        </div>
+        <div class="col-lg-5 d-none d-lg-block">
+          <div class="hero-img-wrap fade-up">
+            <div class="hero-ring">
+              <img src="https://avatars.githubusercontent.com/u/186549600?v=4" alt="Mohib Khorajiya" class="hero-avatar"/>
+            </div>
+            <div class="float-badge fb1"><i class="bi bi-phone"></i> Flutter</div>
+            <div class="float-badge fb2"><i class="bi bi-cloud"></i> Firebase</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section-pad">
+    <div class="container">
+      <div class="sec-head fade-up"><p class="sec-sub">Who I Am</p><h2 class="sec-title">About Me</h2><div class="sec-line"></div></div>
+      <div class="row align-items-center g-5">
+        <div class="col-lg-5 fade-up">
+          <div class="about-img-box">
+            <div class="about-img"><img src="https://avatars.githubusercontent.com/u/186549600?v=4" alt="Mohib Khorajiya"/></div>
+            <div class="about-badge"><h3>2+</h3><p>Years Learning</p></div>
+          </div>
+        </div>
+        <div class="col-lg-7 fade-up">
+          <p class="about-text">I'm <strong>Mohib Khorajiya</strong>, a dedicated Flutter Developer from Wankaner, Morbi, Gujarat, India. I completed my <strong>Diploma in Computer Engineering (2023–2026)</strong> and am currently pursuing my <strong>B.Tech degree (2026–2028)</strong> at Surendranagar University.</p>
+          <p class="about-text">I specialize in building production-grade mobile applications using Flutter & Dart with clean architecture patterns. My expertise includes Firebase backend integration, Riverpod state management, GraphQL APIs, and SQLite local storage. I love creating pixel-perfect UIs and writing maintainable, scalable code.</p>
+          <div class="about-grid">
+            <div class="about-item"><i class="bi bi-person"></i><div><span class="lbl">Name</span><span class="val">Mohib Khorajiya</span></div></div>
+            <div class="about-item"><i class="bi bi-geo-alt"></i><div><span class="lbl">Location</span><span class="val">Wankaner, Morbi, Gujarat, India</span></div></div>
+            <div class="about-item"><i class="bi bi-mortarboard"></i><div><span class="lbl">Degree</span><span class="val">B.Tech (Pursuing)</span></div></div>
+            <div class="about-item"><i class="bi bi-code-slash"></i><div><span class="lbl">Specialization</span><span class="val">Flutter Development</span></div></div>
+          </div>
+          <a href="#contact" class="btn-accent"><i class="bi bi-chat-dots"></i> Let's Connect</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE & EDUCATION -->
+  <section id="experience" class="section-pad" style="background:var(--bg2)">
+    <div class="container">
+      <div class="sec-head fade-up"><p class="sec-sub">My Journey</p><h2 class="sec-title">Experience & Education</h2><div class="sec-line"></div></div>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="timeline">
+            <!-- B.Tech -->
+            <div class="tl-item fade-up">
+              <div class="tl-dot"></div>
+              <div class="tl-card">
+                <span class="tl-date"><i class="bi bi-calendar3"></i> 2026 — 2028</span>
+                <h4>B-Tech Computer Engineering</h4>
+                <p class="inst"><i class="bi bi-building"></i> Surendranagar University</p>
+                <p>Currently pursuing B.Tech in Computer Engineering. Deepening expertise in software architecture, advanced algorithms, and full-stack mobile development.</p>
+              </div>
+            </div>
+
+            <!-- Experience -->
+            <div class="tl-item fade-up">
+              <div class="tl-dot"></div>
+              <div class="tl-card">
+                <span class="tl-date"><i class="bi bi-briefcase"></i> May 2025 — June 2025</span>
+                <h4>Frontend Development Intern</h4>
+                <p class="inst"><i class="bi bi-building"></i> eAirWeb Technology</p>
+                <p>Gained hands-on industry experience in frontend web development, focusing on responsive design, UI implementation, and modern web technologies.</p>
+              </div>
+            </div>
+            
+            <!-- Diploma -->
+            <div class="tl-item fade-up">
+              <div class="tl-dot"></div>
+              <div class="tl-card">
+                <span class="tl-date"><i class="bi bi-calendar3"></i> 2023 — 2026</span>
+                <h4>Diploma in Computer Engineering</h4>
+                <p class="inst"><i class="bi bi-building"></i> Marwadi University, Rajkot</p>
+                <p>Completed diploma with strong foundations in programming, data structures, database management, web technologies, and mobile app development.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section-pad">
+    <div class="container">
+      <div class="sec-head fade-up"><p class="sec-sub">My Expertise</p><h2 class="sec-title">Technical Skills</h2><div class="sec-line"></div></div>
+      <div class="skills-grid">
+        <div class="skill-card fade-up"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/flutter/flutter-original.svg" alt="Flutter"/><h5>Flutter</h5></div>
+        <div class="skill-card fade-up"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/dart/dart-original.svg" alt="Dart"/><h5>Dart</h5></div>
+        <div class="skill-card fade-up"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/firebase/firebase-plain.svg" alt="Firebase"/><h5>Firebase</h5></div>
+        <div class="skill-card fade-up"><img src="https://img.icons8.com/fluency/48/api-settings.png" alt="REST API"/><h5>REST API</h5></div>
+        <div class="skill-card fade-up"><img src="https://avatars.githubusercontent.com/u/75608605?s=200&v=4" alt="Riverpod" style="border-radius: 8px;"/><h5>Riverpod</h5></div>
+        <div class="skill-card fade-up"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/graphql/graphql-plain.svg" alt="GraphQL"/><h5>GraphQL</h5></div>
+        <div class="skill-card fade-up"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/sqlite/sqlite-original.svg" alt="SQLite"/><h5>SQLite</h5></div>
+        <div class="skill-card fade-up"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/html5/html5-original.svg" alt="HTML"/><h5>HTML</h5></div>
+        <div class="skill-card fade-up"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/css3/css3-original.svg" alt="CSS"/><h5>CSS</h5></div>
+        <div class="skill-card fade-up"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/javascript/javascript-original.svg" alt="JS"/><h5>JavaScript</h5></div>
+      </div>
+
+      <!-- TOOLS -->
+      <div class="sec-head fade-up" style="margin-top:80px"><p class="sec-sub">What I Use</p><h2 class="sec-title">Tools & Platforms</h2><div class="sec-line"></div></div>
+      <div class="skills-grid">
+        <div class="skill-card fade-up"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/git/git-original.svg" alt="Git"/><h5>Git</h5></div>
+        <div class="skill-card fade-up"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/github/github-original.svg" alt="GitHub" style="filter:invert(1)"/><h5>GitHub</h5></div>
+        <div class="skill-card fade-up"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/androidstudio/androidstudio-original.svg" alt="Android Studio"/><h5>Android Studio</h5></div>
+        <div class="skill-card fade-up"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/vscode/vscode-original.svg" alt="VS Code"/><h5>VS Code</h5></div>
+        <div class="skill-card fade-up"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/postman/postman-original.svg" alt="Postman"/><h5>Postman</h5></div>
+        <div class="skill-card fade-up"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/ubuntu/ubuntu-original.svg" alt="Ubuntu"/><h5>Linux</h5></div>
+        <div class="skill-card fade-up"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/netlify/netlify-original.svg" alt="Netlify"/><h5>Netlify</h5></div>
+        <div class="skill-card fade-up"><img src="https://img.icons8.com/color/48/artificial-intelligence.png" alt="Stitch AI"/><h5>Stitch AI</h5></div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section-pad" style="background:var(--bg2)">
+    <div class="container">
+      <div class="sec-head fade-up"><p class="sec-sub">My Work</p><h2 class="sec-title">Featured Projects</h2><div class="sec-line"></div></div>
+      <div class="row g-4">
+
+        <!-- Xpanse -->
+        <div class="col-lg-4 col-md-6 fade-up">
+          <div class="proj-card">
+            <div class="proj-poster">
+              <img src="project-thumnail/Xpanse_thumnail.png" alt="Xpanse Poster">
+            </div>
+            <div class="proj-info">
+              <div class="proj-header">
+                <div class="proj-logo"><img src="Project%20Photo/Xpanse%20screenshots/Xpanse_icon.jpeg" alt="Xpanse Logo"/></div>
+                <h4>Xpanse</h4>
+              </div>
+              <div class="proj-body">
+                <p>Xpanse is a robust financial management application featuring secure Firebase Authentication with email verification. It leverages Cloud Firestore for real-time cloud data persistence secured by rigorous Firestore security rules. The app boasts optimized form validation logic, comprehensive error handling mapping explicit Firebase exceptions, and a polished, professional user interface.</p>
+                
+                <div class="proj-techs">
+                  <div class="proj-tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/flutter/flutter-original.svg" alt="Flutter"/> Flutter</div>
+                  <div class="proj-tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/dart/dart-original.svg" alt="Dart"/> Dart</div>
+                  <div class="proj-tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/firebase/firebase-plain.svg" alt="Firebase Auth"/> Firebase Auth</div>
+                  <div class="proj-tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/firebase/firebase-plain.svg" alt="Cloud Firestore"/> Cloud Firestore</div>
+                  <div class="proj-tech-item"><img src="https://avatars.githubusercontent.com/u/75608605?s=200&v=4" alt="Riverpod"/> Riverpod</div>
+                </div>
+                
+                <div class="proj-links">
+                  <a href="#" class="proj-link btn-gallery" data-images="Project%20Photo/Xpanse%20screenshots/splashScreen.png,Project%20Photo/Xpanse%20screenshots/HomePage.png,Project%20Photo/Xpanse%20screenshots/SignIn.png,Project%20Photo/Xpanse%20screenshots/login.png,Project%20Photo/Xpanse%20screenshots/Expense.png,Project%20Photo/Xpanse%20screenshots/Income.png,Project%20Photo/Xpanse%20screenshots/Budget.png,Project%20Photo/Xpanse%20screenshots/addExpense.png,Project%20Photo/Xpanse%20screenshots/addIncome.png,Project%20Photo/Xpanse%20screenshots/profile.png"><i class="bi bi-image"></i> Photos</a>
+                  <a href="https://github.com/MohibKhorajiya01/Xpanse-App" target="_blank" class="proj-link main"><i class="bi bi-github"></i> GitHub</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Wallora -->
+        <div class="col-lg-4 col-md-6 fade-up">
+          <div class="proj-card">
+            <div class="proj-poster">
+              <img src="project-thumnail/wallora_thumnail.png" alt="Wallora Poster">
+            </div>
+            <div class="proj-info">
+              <div class="proj-header">
+                <div class="proj-logo"><img src="Project%20Photo/Wallora%20Screenshots/walllora_icon.png" alt="Wallora Logo"/></div>
+                <h4>Wallora</h4>
+              </div>
+              <div class="proj-body">
+                <p>Wallora is a high-performance, premium wallpaper application complete with user and admin panels. It enforces secure authentication routing, role-based redirection, and persistent session management. Features include wallpaper search, favorites, direct wallpaper setting logic, and extensive UI enhancements. The codebase emphasizes security and architectural best practices.</p>
+                
+                <div class="proj-techs">
+                  <div class="proj-tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/flutter/flutter-original.svg" alt="Flutter"/> Flutter</div>
+                  <div class="proj-tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/dart/dart-original.svg" alt="Dart"/> Dart</div>
+                  <div class="proj-tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/firebase/firebase-plain.svg" alt="Firebase Auth"/> Firebase Auth</div>
+                  <div class="proj-tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/firebase/firebase-plain.svg" alt="Cloud Storage"/> Cloud Storage</div>
+                  <div class="proj-tech-item"><img src="https://avatars.githubusercontent.com/u/75608605?s=200&v=4" alt="Riverpod"/> Riverpod</div>
+                </div>
+                
+                <div class="proj-links">
+                  <a href="#" class="proj-link btn-gallery" data-images="Project%20Photo/Wallora%20Screenshots/homepage.png,Project%20Photo/Wallora%20Screenshots/Signup.png,Project%20Photo/Wallora%20Screenshots/Login.png,Project%20Photo/Wallora%20Screenshots/verification.png,Project%20Photo/Wallora%20Screenshots/Serch.png,Project%20Photo/Wallora%20Screenshots/SetWallpaper.png,Project%20Photo/Wallora%20Screenshots/whishllist.png,Project%20Photo/Wallora%20Screenshots/UserProfile.png,Project%20Photo/Wallora%20Screenshots/AdminDeshboard.png,Project%20Photo/Wallora%20Screenshots/AdminUpload.png,Project%20Photo/Wallora%20Screenshots/AdminUasesList.png,Project%20Photo/Wallora%20Screenshots/AdminPrifile.png"><i class="bi bi-image"></i> Photos</a>
+                  <a href="https://github.com/MohibKhorajiya01/wallora-app" target="_blank" class="proj-link main"><i class="bi bi-github"></i> GitHub</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- GitScope -->
+        <div class="col-lg-4 col-md-6 fade-up">
+          <div class="proj-card">
+            <div class="proj-poster">
+              <img src="project-thumnail/Gitscope_thumnail.png" alt="GitScope Poster">
+            </div>
+            <div class="proj-info">
+              <div class="proj-header">
+                <div class="proj-logo"><img src="Project%20Photo/GitScope%20Screenshots/Gitscope_icon.png" alt="GitScope Logo"/></div>
+                <h4>GitScope</h4>
+              </div>
+              <div class="proj-body">
+                <p>GitScope is an advanced GitHub profile and repository explorer built with robust clean architecture principles. It seamlessly integrates the GitHub GraphQL API to fetch real-time data efficiently. Key features include infinite scrolling capabilities, a professional hand-coded aesthetic, and meticulous error handling for an exceptional user experience.</p>
+                
+                <div class="proj-techs">
+                  <div class="proj-tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/flutter/flutter-original.svg" alt="Flutter"/> Flutter</div>
+                  <div class="proj-tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/dart/dart-original.svg" alt="Dart"/> Dart</div>
+                  <div class="proj-tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/graphql/graphql-plain.svg" alt="GraphQL"/> GraphQL API</div>
+                  <div class="proj-tech-item"><img src="https://avatars.githubusercontent.com/u/75608605?s=200&v=4" alt="Riverpod"/> Riverpod</div>
+                  <div class="proj-tech-item"><i class="bi bi-github" style="margin-right:6px"></i> GitHub API</div>
+                </div>
+                
+                <div class="proj-links">
+                  <a href="#" class="proj-link btn-gallery" data-images="Project%20Photo/GitScope%20Screenshots/splashScreen.png,Project%20Photo/GitScope%20Screenshots/homepage.png,Project%20Photo/GitScope%20Screenshots/githubUser1.png,Project%20Photo/GitScope%20Screenshots/githubUser2.png"><i class="bi bi-image"></i> Photos</a>
+                  <a href="https://github.com/MohibKhorajiya01/GitScope-App" target="_blank" class="proj-link main"><i class="bi bi-github"></i> GitHub</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Resify -->
+        <div class="col-lg-4 col-md-6 fade-up">
+          <div class="proj-card">
+            <div class="proj-poster">
+              <img src="project-thumnail/Resify_thumnail.png" alt="Resify Poster">
+            </div>
+            <div class="proj-info">
+              <div class="proj-header">
+                <div class="proj-logo"><img src="Project%20Photo/Resify%20Screenshots/resify_icon.png" alt="Resify Logo"/></div>
+                <h4>Resify</h4>
+              </div>
+              <div class="proj-body">
+                <p>Resify is a next-generation AI-powered Resume Builder integrated with the Google Gemini API to automatically generate, format, and optimize resume content. It features a stable offline-ready editing suite, seamless PDF export functionality, and 4 premium customizable templates designed for all professions. The architecture boasts a clean, intentional design ensuring production-grade reliability.</p>
+                
+                <div class="proj-techs">
+                  <div class="proj-tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/flutter/flutter-original.svg" alt="Flutter"/> Flutter</div>
+                  <div class="proj-tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/dart/dart-original.svg" alt="Dart"/> Dart</div>
+                  <div class="proj-tech-item"><img src="https://img.icons8.com/color/48/artificial-intelligence.png" alt="Gemini API"/> Google Gemini API</div>
+                  <div class="proj-tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/sqlite/sqlite-original.svg" alt="SQLite"/> SQLite</div>
+                  <div class="proj-tech-item"><img src="https://avatars.githubusercontent.com/u/75608605?s=200&v=4" alt="Riverpod"/> Riverpod</div>
+                </div>
+                
+                <div class="proj-links">
+                  <a href="#" class="proj-link btn-gallery" data-images="Project%20Photo/Resify%20Screenshots/SpleshScreen.png,Project%20Photo/Resify%20Screenshots/HomePage.png,Project%20Photo/Resify%20Screenshots/Signup.png,Project%20Photo/Resify%20Screenshots/login.png,Project%20Photo/Resify%20Screenshots/verify.png,Project%20Photo/Resify%20Screenshots/SelectTemplate.png,Project%20Photo/Resify%20Screenshots/inputProcess.png,Project%20Photo/Resify%20Screenshots/proptPage.png,Project%20Photo/Resify%20Screenshots/GenerateResume.png,Project%20Photo/Resify%20Screenshots/EditResume1.png,Project%20Photo/Resify%20Screenshots/EditResume2.png,Project%20Photo/Resify%20Screenshots/userProfile.png"><i class="bi bi-image"></i> Photos</a>
+                  <a href="https://github.com/MohibKhorajiya01/Resify-App" target="_blank" class="proj-link main"><i class="bi bi-github"></i> GitHub</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CommerceLQ -->
+        <div class="col-lg-4 col-md-6 fade-up">
+          <div class="proj-card">
+            <div class="proj-poster">
+              <img src="project-thumnail/ComercelQ_thumnail.png" alt="CommerceLQ Poster">
+            </div>
+            <div class="proj-info">
+              <div class="proj-header">
+                <div class="proj-logo"><img src="Project%20Photo/CommerceLQ%20Screenshots/commercelQ_icon.png" alt="CommerceLQ Logo"/></div>
+                <h4>CommerceLQ</h4>
+              </div>
+              <div class="proj-body">
+                <p>CommerceLQ is a premium, offline-first e-commerce learning platform designed with a polished, modern UI. It offers structured courses, interactive roadmaps, and detailed progress tracking mechanics. Features include a custom app icon, robust local storage, and a comprehensively clean, hand-coded architecture optimized for a bug-free production release.</p>
+                
+                <div class="proj-techs">
+                  <div class="proj-tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/flutter/flutter-original.svg" alt="Flutter"/> Flutter</div>
+                  <div class="proj-tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/dart/dart-original.svg" alt="Dart"/> Dart</div>
+                  <div class="proj-tech-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/sqlite/sqlite-original.svg" alt="SQLite"/> SQLite</div>
+                  <div class="proj-tech-item"><img src="https://avatars.githubusercontent.com/u/75608605?s=200&v=4" alt="Riverpod"/> Riverpod</div>
+                </div>
+                
+                <div class="proj-links">
+                  <a href="#" class="proj-link btn-gallery" data-images="Project%20Photo/CommerceLQ%20Screenshots/SplashScreen.png,Project%20Photo/CommerceLQ%20Screenshots/HomePage.png,Project%20Photo/CommerceLQ%20Screenshots/SelectBusness.png,Project%20Photo/CommerceLQ%20Screenshots/busnessLesson1.png,Project%20Photo/CommerceLQ%20Screenshots/Learn1.png,Project%20Photo/CommerceLQ%20Screenshots/Learn2.png,Project%20Photo/CommerceLQ%20Screenshots/Search.png,Project%20Photo/CommerceLQ%20Screenshots/Bookmark.png,Project%20Photo/CommerceLQ%20Screenshots/Profile.png"><i class="bi bi-image"></i> Photos</a>
+                  <a href="https://github.com/MohibKhorajiya01/CommercelLQ-App" target="_blank" class="proj-link main"><i class="bi bi-github"></i> GitHub</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section-pad">
+    <div class="container text-center">
+      <div class="sec-head fade-up"><p class="sec-sub">Get In Touch</p><h2 class="sec-title">Contact Me</h2><div class="sec-line mx-auto" style="margin: 0 auto;"></div></div>
+      <div class="fade-up" style="margin-top: 40px;">
+        <p style="color: var(--text2); font-size: 1.1rem; max-width: 600px; margin: 0 auto 30px;">
+          I'm currently available for freelance work and full-time opportunities. If you have a project that needs some creative touch or just want to say hi, my inbox is always open!
+        </p>
+        <a href="mailto:mohibkhorajiya848@gmail.com?subject=Portfolio%20Inquiry&body=Hi%20Mohib,%0D%0A%0D%0AI%20saw%20your%20Flutter%20portfolio%20and%20would%20like%20to%20discuss%20a%20project%20with%20you.%0D%0A%0D%0ARegards," class="btn-accent" style="font-size: 1.2rem; padding: 16px 36px; display: inline-flex; align-items: center; gap: 10px;">
+          <i class="bi bi-envelope-paper-heart" style="font-size: 1.4rem;"></i> Send an Email
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-social">
+        <a href="https://github.com/MohibKhorajiya01" target="_blank"><i class="bi bi-github"></i></a>
+        <a href="https://www.instagram.com/mohib.khorajiya1?igsh=dW93OGczajRvdXQz" target="_blank"><i class="bi bi-instagram"></i></a>
+        <a href="mailto:mohibkhorajiya848@gmail.com"><i class="bi bi-envelope-fill"></i></a>
+      </div>
+      <p>&copy; 2026 Mohib <span>Khorajiya</span>. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scrollTop"><i class="bi bi-arrow-up"></i></button>
+
+  <!-- Custom Cursor Elements -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-outline"></div>
+
+  <!-- Image Gallery Modal -->
+  <div id="galleryModal" class="gallery-modal">
+    <span class="gallery-close" id="galleryClose">&times;</span>
+    <button class="gallery-nav prev" id="galleryPrev"><i class="bi bi-chevron-left"></i></button>
+    <div class="gallery-content">
+      <img id="galleryImage" src="" alt="Project Screenshot">
+    </div>
+    <button class="gallery-nav next" id="galleryNext"><i class="bi bi-chevron-right"></i></button>
+    <div class="gallery-counter" id="galleryCounter">1 / 1</div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
