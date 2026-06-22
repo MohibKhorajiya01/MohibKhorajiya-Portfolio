@@ -210,7 +210,7 @@ function processTerminalCommand() {
   if (val === '') return;
   
   const echoDiv = document.createElement('div');
-  echoDiv.innerHTML = `<span class="prompt">mohib@portfolio:~$</span> ${val}`;
+  echoDiv.innerHTML = `<span class="prompt"><span class="d-none d-md-inline">mohib@portfolio:</span>~$</span> ${val}`;
   termBody.appendChild(echoDiv);
   
   if (val === 'clear') {

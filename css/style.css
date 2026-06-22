@@ -379,7 +379,7 @@ img{max-width:100%;display:block}
   border-radius: 6px;
   width: 32px;
   height: 32px;
-  display: flex;
+  display: none;
   flex-shrink: 0;
   align-items: center;
   justify-content: center;
@@ -431,5 +431,11 @@ img{max-width:100%;display:block}
   }
   .skill-card h5 {
     font-size: 0.75rem;
+  }
+  .terminal-submit-btn {
+    display: flex;
+  }
+  .terminal-input-line {
+    padding: 0 10px 15px 10px;
   }
 }
