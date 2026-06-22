@@ -437,7 +437,7 @@ img{max-width:100%;display:block}
     font-size: 0.75rem;
   }
   .terminal-window {
-    min-height: 250px;
+    min-height: 300px;
   }
   .terminal-body {
     padding: 10px;
