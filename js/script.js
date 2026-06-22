@@ -64,7 +64,7 @@ fadeEls.forEach(el => obs.observe(el));
 
 // Typing effect
 const typingEl = document.getElementById('typingText');
-const roles = ['Flutter Developer', 'Cross Platform Developer'];
+const roles = ['Flutter Developer', 'Cross-Platform App Developer'];
 let ri = 0, ci = 0, del = false;
 function typeIt() {
   const cur = roles[ri];
