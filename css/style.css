@@ -364,6 +364,7 @@ img{max-width:100%;display:block}
 }
 .terminal-input-line input {
   flex: 1;
+  min-width: 0;
   background: transparent;
   border: none;
   outline: none;
@@ -379,6 +380,7 @@ img{max-width:100%;display:block}
   width: 32px;
   height: 32px;
   display: flex;
+  flex-shrink: 0;
   align-items: center;
   justify-content: center;
   cursor: pointer;
