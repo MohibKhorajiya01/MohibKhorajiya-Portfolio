@@ -432,10 +432,20 @@ img{max-width:100%;display:block}
   .skill-card h5 {
     font-size: 0.75rem;
   }
-  .terminal-submit-btn {
-    display: flex;
+  .terminal-window {
+    min-height: 250px;
+  }
+  .terminal-body {
+    padding: 10px;
+    font-size: 0.8rem;
   }
   .terminal-input-line {
-    padding: 0 10px 15px 10px;
+    padding: 0 10px 10px 10px;
+    font-size: 0.8rem;
+  }
+  .terminal-submit-btn {
+    display: flex;
+    width: 28px;
+    height: 28px;
   }
 }
