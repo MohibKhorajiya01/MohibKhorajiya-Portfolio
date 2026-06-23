@@ -436,7 +436,7 @@ img{max-width:100%;display:block}
     font-size: 0.7rem;
   }
   .proj-poster {
-    height: 260px;
+    height: 200px;
     border-bottom: 2px solid rgba(157, 0, 255, 0.15);
   }
   .proj-poster img {
@@ -445,6 +445,8 @@ img{max-width:100%;display:block}
     object-fit: cover;
   }
   .proj-card {
+    max-width: 340px;
+    margin: 0 auto;
     border: 1px solid rgba(157, 0, 255, 0.2);
     border-radius: 16px;
   }
