@@ -1577,3 +1577,13 @@ img {
     box-shadow: 0 4px 15px var(--accent-glow);
   }
 }
+
+/* Fix for double-tap issue on iOS/mobile devices */
+@media (hover: none) {
+  .btn-accent:hover,
+  .btn-ghost:hover,
+  .btn-contact:hover,
+  .proj-card:hover {
+    transform: none !important;
+  }
+}
