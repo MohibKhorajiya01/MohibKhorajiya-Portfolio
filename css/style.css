@@ -695,6 +695,7 @@ img {
   object-position: top;
   display: block;
   transform: scale(1);
+  transform-origin: top;
   transition: transform 0.5s ease;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
