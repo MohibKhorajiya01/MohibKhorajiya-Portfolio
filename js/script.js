@@ -7,16 +7,16 @@ const glow2 = document.querySelector('.glow2');
 window.addEventListener('scroll', () => {
   // Navbar Scrolled State
   navbar.classList.toggle('scrolled', window.scrollY > 50);
-  
+
   // Scroll Progress Bar
   const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
   const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
   const scrolled = (winScroll / height) * 100;
-  if(scrollProgress) scrollProgress.style.width = scrolled + "%";
+  if (scrollProgress) scrollProgress.style.width = scrolled + "%";
 
   // Parallax Effect for Hero Glows
-  if(glow1) glow1.style.transform = `translateY(${window.scrollY * 0.4}px)`;
-  if(glow2) glow2.style.transform = `translateY(${window.scrollY * 0.2}px)`;
+  if (glow1) glow1.style.transform = `translateY(${window.scrollY * 0.4}px)`;
+  if (glow2) glow2.style.transform = `translateY(${window.scrollY * 0.2}px)`;
 });
 
 // Scroll to top
@@ -193,9 +193,9 @@ const commands = {
          exit     - Close the terminal<br>
          sudo     - ?????`,
   about: `Hi, I'm Mohib Khorajiya. A Flutter Developer & Computer Engineering student from Gujarat, India.`,
-  skills: `Flutter, Dart, Firebase, Riverpod, GraphQL, SQLite, REST API, Git.`,
-  projects: `Xpanse, Resify, CommerceLQ, GitScope, Wallora. Type 'exit' to view them in the UI.`,
-  contact: `Email: mohib@example.com<br>LinkedIn: linkedin.com/in/<br>GitHub: github.com/MohibKhorajiya01`,
+  skills: `Flutter, Dart, Firebase, Riverpod, GetX, GraphQL, SQLite, REST API, Git.`,
+  projects: `Resify, DistriGo, Xpanse, Wallora, GitScope, CommerceLQ. Type 'exit' to view them in the UI.`,
+  contact: `Email: mohibkhorajiya848@gmail.com<br>LinkedIn: linkedin.com/in/mohib-khorajiya<br>GitHub: github.com/MohibKhorajiya01`,
   whoami: `You are a recruiter/visitor admiring my awesome portfolio!`,
   "sudo rm -rf /": `<span class="term-err">Nice try! You don't have root privileges to delete my portfolio.</span>`,
   sudo: `<span class="term-err">Mohib is not in the sudoers file. This incident will be reported.</span>`
@@ -206,13 +206,13 @@ const termSubmitBtn = document.getElementById('terminalSubmitBtn');
 function processTerminalCommand() {
   const val = termInput.value.trim().toLowerCase();
   termInput.value = '';
-  
+
   if (val === '') return;
-  
+
   const echoDiv = document.createElement('div');
   echoDiv.innerHTML = `<span class="prompt"><span class="d-none d-md-inline">mohib@portfolio:</span>~$</span> ${val}`;
   termBody.appendChild(echoDiv);
-  
+
   if (val === 'clear') {
     termBody.innerHTML = `<div>Terminal cleared. Type 'help' for commands.</div>`;
     return;
@@ -221,7 +221,7 @@ function processTerminalCommand() {
     termBody.innerHTML = `<div>Session closed. Type 'help' to restart.</div>`;
     return;
   }
-  
+
   const replyDiv = document.createElement('div');
   if (commands[val]) {
     replyDiv.innerHTML = commands[val];
@@ -233,7 +233,7 @@ function processTerminalCommand() {
 }
 
 if (termInput) {
-  termInput.addEventListener('keydown', function(e) {
+  termInput.addEventListener('keydown', function (e) {
     if (e.key === 'Enter') {
       processTerminalCommand();
     }
