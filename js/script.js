@@ -119,7 +119,34 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
   });
 });
 
+// Custom Cursor
+const cursorDot = document.querySelector('.cursor-dot');
+const cursorOutline = document.querySelector('.cursor-outline');
 
+window.addEventListener('mousemove', (e) => {
+  const posX = e.clientX;
+  const posY = e.clientY;
+
+  cursorDot.style.left = `${posX}px`;
+  cursorDot.style.top = `${posY}px`;
+
+  // Use animate for smooth lagging effect on the outline
+  cursorOutline.animate({
+    left: `${posX}px`,
+    top: `${posY}px`
+  }, { duration: 500, fill: "forwards" });
+});
+
+// Cursor Hover Effects
+const interactables = document.querySelectorAll('a, button, .proj-card, .skill-card, .mac-btns span');
+interactables.forEach(el => {
+  el.addEventListener('mouseenter', () => {
+    cursorOutline.classList.add('hover-active');
+  });
+  el.addEventListener('mouseleave', () => {
+    cursorOutline.classList.remove('hover-active');
+  });
+});
 
 // Vanilla Tilt 3D Effect for Cards
 if (typeof VanillaTilt !== 'undefined') {
